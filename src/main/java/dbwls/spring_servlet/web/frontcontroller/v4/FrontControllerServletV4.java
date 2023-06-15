@@ -20,6 +20,7 @@ public class FrontControllerServletV4 extends HttpServlet {
 
     private Map<String, ControllerV4> controllerMap = new HashMap<>();
 
+    // 요청받은 url 에 맞는 컨트롤러를 찾기 위해서 가능한 모든 컨트롤러를 Map 에 저장
     public FrontControllerServletV4() {
         controllerMap.put("/front-controller/v4/members/new-form", new MemberFormControllerV4());
         controllerMap.put("/front-controller/v4/members/save", new MemberSaveControllerV4());
